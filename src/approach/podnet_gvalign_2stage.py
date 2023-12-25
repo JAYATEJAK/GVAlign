@@ -242,7 +242,7 @@ class Appr(Inc_Learning_Appr):
             lr = 0.1
             best_loss = np.inf
             self.optimizer_classifier_tune = torch.optim.SGD(params, lr=lr, weight_decay=self.wd, momentum=self.momentum)
-            for e in range(200):
+            for e in range(100):
                 # Train
                 clock0 = time.time()
                 # self.train_epoch(t, trn_loader)
