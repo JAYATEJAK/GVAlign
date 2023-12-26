@@ -19,6 +19,9 @@ $conda env create -f long_tail_cil.yml
 ```
 
 ### Training
+```
+$bash ./scripts/script_cifar100_no_gridsearch.sh <approach> <GPU_ID> <Dataset> <Distribution type> <# Base classes> <# tasks>
+```
 #### CIFAR-100 - shuffled long tail
 ```
 $bash ./scripts/script_cifar100_no_gridsearch.sh lucir_gvalign_2stage 0 cifar100 lt 50 6
